@@ -185,7 +185,7 @@
         </div>
     </footer>
 
-    <!-- MODAL 1: Text Me Form (Routes cleanly to info@ookmcp.com with clear text indicator) -->
+    <!-- MODAL 1: Text Me Form -->
     <div id="textModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-brandDark/50 backdrop-blur-sm p-4">
         <div class="bg-white rounded-2xl max-w-md w-full p-8 relative shadow-2xl">
             <button onclick="closeModal('textModal')" class="absolute top-4 right-4 text-gray-400 hover:text-brandDark font-bold text-lg">&times;</button>
@@ -194,6 +194,8 @@
             
             <form action="https://formsubmit.co/info@ookmcp.com" method="POST" class="space-y-4">
                 <input type="hidden" name="_subject" value="📱 New Text Request from OOKMCP Website">
+                <!-- Redirects back to your custom domain instead of the default FormSubmit screen -->
+                <input type="hidden" name="_next" value="https://www.ookmcp.com">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Your Phone Number</label>
                     <input type="tel" name="phone_number" required placeholder="757-000-0000" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue">
@@ -218,6 +220,8 @@
             
             <form action="https://formsubmit.co/info@ookmcp.com" method="POST" class="space-y-4">
                 <input type="hidden" name="_subject" value="✉️ New Email Inquiry from OOKMCP Website">
+                <!-- Redirects back to your custom domain instead of the default FormSubmit screen -->
+                <input type="hidden" name="_next" value="https://www.ookmcp.com">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Your Name</label>
                     <input type="text" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue">
