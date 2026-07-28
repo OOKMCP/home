@@ -101,7 +101,7 @@
             </div>
         </section>
 
-        <!-- Impact & Problem-Solving Section (All 4 Services in One Row) -->
+        <!-- Impact & Problem-Solving Section -->
         <section class="py-24 max-w-7xl mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
                 <h2 class="text-xs font-bold tracking-widest text-brandBlue uppercase mb-3">The Transformation</h2>
@@ -110,7 +110,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-                <!-- Service 1: Vision and Mission Statements -->
+                <!-- Service 1 -->
                 <div class="p-6 rounded-2xl bg-brandGray border border-gray-100 hover:border-brandBlue/30 transition-all group flex flex-col justify-between">
                     <div>
                         <div class="text-brandBlue font-mono text-xs font-bold mb-3">01 / VISION & MISSION</div>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-                <!-- Service 2: Strategies -->
+                <!-- Service 2 -->
                 <div class="p-6 rounded-2xl bg-brandGray border border-gray-100 hover:border-brandBlue/30 transition-all group flex flex-col justify-between">
                     <div>
                         <div class="text-brandBlue font-mono text-xs font-bold mb-3">02 / STRATEGIES</div>
@@ -136,7 +136,7 @@
                     </div>
                 </div>
 
-                <!-- Service 3: Roadmaps & Plans -->
+                <!-- Service 3 -->
                 <div class="p-6 rounded-2xl bg-brandGray border border-gray-100 hover:border-brandBlue/30 transition-all group flex flex-col justify-between">
                     <div>
                         <div class="text-brandBlue font-mono text-xs font-bold mb-3">03 / ROADMAPS & PLANS</div>
@@ -149,7 +149,7 @@
                     </div>
                 </div>
 
-                <!-- Service 4: Process Models -->
+                <!-- Service 4 -->
                 <div class="p-6 rounded-2xl bg-brandGray border border-gray-100 hover:border-brandBlue/30 transition-all group flex flex-col justify-between">
                     <div>
                         <div class="text-brandBlue font-mono text-xs font-bold mb-3">04 / PROCESS MODELS</div>
@@ -185,24 +185,25 @@
         </div>
     </footer>
 
-    <!-- MODAL 1: Text Me Form -->
+    <!-- MODAL 1: Text Me Form (Routes cleanly to info@ookmcp.com with clear text indicator) -->
     <div id="textModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-brandDark/50 backdrop-blur-sm p-4">
         <div class="bg-white rounded-2xl max-w-md w-full p-8 relative shadow-2xl">
             <button onclick="closeModal('textModal')" class="absolute top-4 right-4 text-gray-400 hover:text-brandDark font-bold text-lg">&times;</button>
             <h3 class="text-xl font-bold text-brandDark mb-2">Text Me Directly</h3>
-            <p class="text-xs text-gray-500 mb-6">Fill out your details below. This will instantly route a text message to 757-652-1112.</p>
+            <p class="text-xs text-gray-500 mb-6">Enter your phone number and message. This will instantly send a text-request notification to info@ookmcp.com.</p>
             
-            <form action="https://formsubmit.co/7576521112@txt.att.net" method="POST" class="space-y-4">
+            <form action="https://formsubmit.co/info@ookmcp.com" method="POST" class="space-y-4">
+                <input type="hidden" name="_subject" value="📱 New Text Request from OOKMCP Website">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Your Phone Number</label>
-                    <input type="tel" name="phone" required placeholder="757-000-0000" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue">
+                    <input type="tel" name="phone_number" required placeholder="757-000-0000" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue">
                 </div>
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Message</label>
-                    <textarea name="message" rows="3" required placeholder="How can we help your organization?" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue"></textarea>
+                    <textarea name="message" rows="3" required placeholder="What should we text you about?" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue"></textarea>
                 </div>
                 <button type="submit" class="w-full py-3 bg-brandBlue text-white text-xs font-bold uppercase tracking-wider rounded-lg hover:bg-blue-700 transition-colors">
-                    Send Text Message
+                    Send Text Request
                 </button>
             </form>
         </div>
@@ -216,7 +217,7 @@
             <p class="text-xs text-gray-500 mb-6">Submit your details to send a direct message straight to info@ookmcp.com.</p>
             
             <form action="https://formsubmit.co/info@ookmcp.com" method="POST" class="space-y-4">
-                <input type="hidden" name="_subject" value="New Inquiry from OOKMCP Website">
+                <input type="hidden" name="_subject" value="✉️ New Email Inquiry from OOKMCP Website">
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-gray-600 mb-1">Your Name</label>
                     <input type="text" name="name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 text-sm rounded-lg border border-gray-200 focus:outline-none focus:border-brandBlue">
